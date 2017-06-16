@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> 
+<title>无标题文档</title>
+<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+<link href="style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+<!--头部 -->
+<div class="xkzx_top_d">
+    我的订单
+    <span class="left"><a href="#"><img src="images/fanhui.png" alt="" style="
+    height:0.4rem;"></a></span>
+</div>
+
+
+<!-- 代码部分begin -->
+<div class="lanrenzhijia">
+	<div class="tab">
+    	<a href="javascript:;" style="border-right:1px solid #ccc;">已支付</a>
+        <a href="javascript:;">未支付</a>
+    </div>
+    <div class="content">
+    	<ul>
+        	<li style="display:block;">
+            <!--内容 1-->
+                <div class="tjdd_main1 wddj_yzf_d">
+                    <div class="wddj_main1_d">
+                        <div class="tjdd_main1_l"><img src="images/tssc_img.png" alt=""></div>
+                        <div class="tjdd_main1_r">
+                            <p>2017乡村全科执业助理医师—特色通关班（四科）</p>
+                            <p class="shop_rmb">¥39.80元 <span class="text-muted">×1</span></p>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <p class="wddj_hj">合计：¥39.80元 运费：10.00元</p>
+                    <p class="wddj_xt"></p>
+                    
+                    <div class="wddj_main1_d" style="margin-top:0.1rem;">
+                        <div class="tjdd_main1_l"><img src="images/tssc_img.png" alt=""></div>
+                        <div class="tjdd_main1_r">
+                            <p>2017乡村全科执业助理医师—特色通关班（四科）</p>
+                            <p class="shop_rmb">¥39.80元 <span class="text-muted">×1</span></p>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <p class="wddj_hj">合计：¥39.80元 运费：10.00元</p>
+                    <p class="wddj_xt"></p>
+                </div>
+            </li>
+            
+            <li>
+            	<!--内容 2-->
+                <div class="tjdd_main1 wddj_wzf_d">
+                    <div class="wddj_main1_d">
+                        <div class="tjdd_main1_l"><img src="images/tssc_img.png" alt=""></div>
+                        <div class="tjdd_main1_r">
+                            <p>2017乡村全科执业助理医师—特色通关班（四科）</p>
+                            <p class="shop_rmb">¥39.80元 <span class="text-muted">×1</span></p>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <p class="wddj_hj">合计：¥39.80元 运费：10.00元<a href="#" class="wddj_qrzf">确认支付</a></p>
+                    <p class="wddj_xt"></p>
+                    
+                    <div class="wddj_main1_d" style="margin-top:0.1rem;">
+                        <div class="tjdd_main1_l"><img src="images/tssc_img.png" alt=""></div>
+                        <div class="tjdd_main1_r">
+                            <p>2017乡村全科执业助理医师—特色通关班（四科）</p>
+                            <p class="shop_rmb">¥39.80元 <span class="text-muted">×1</span></p>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <p class="wddj_hj">合计：¥39.80元 运费：10.00元<a href="#" class="wddj_qrzf">确认支付</a></p>
+                    <p class="wddj_xt"></p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<script src="http://www.lanrenzhijia.com/ajaxjs/jquery.min.js"></script>
+<script>
+$(function(){
+	$(".lanrenzhijia .tab a").mouseover(function(){
+		$(this).addClass('on').siblings().removeClass('on');
+		var index = $(this).index();
+		number = index;
+		$('.lanrenzhijia .content li').hide();
+		$('.lanrenzhijia .content li:eq('+index+')').show();
+	});
+	
+	var auto = 5;  //等于1则自动切换，其他任意数字则不自动切换
+	if(auto ==5){
+		var number = 0;
+		var maxNumber = $('.lanrenzhijia .tab a').length;
+		function autotab(){
+			number++;
+			number == maxNumber? number = 0 : number;
+			$('.lanrenzhijia .tab a:eq('+number+')').addClass('on').siblings().removeClass('on');
+			$('.lanrenzhijia .content ul li:eq('+number+')').show().siblings().hide();
+		}
+		var tabChange = setInterval(autotab,3000);
+		//鼠标悬停暂停切换
+		$('.lanrenzhijia').mouseover(function(){
+			clearInterval(tabChange);
+		});
+		$('.lanrenzhijia').mouseout(function(){
+			tabChange = setInterval(autotab,3000);
+		});
+	  }
+});
+</script>
+<!-- 代码部分end -->
+</body>
+</html>

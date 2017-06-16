@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> 
+<title>无标题文档</title>
+<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+<link href="style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+<!--头部 -->
+<div class="xkzx_top_d">
+    选课中心
+    <span class="left"><a href="#"><img src="images/fanhui.png" alt="" style="
+    height:0.4rem;"></a></span>
+    <span class="right"><a href="#">登录</a>/<a href="#">注册</a></span>
+</div>
+
+<!--专业 -->
+<div class="xkzx_nav" style="position:relative;">
+	<ul>
+    	<li style="border-right:1px solid #ccc;" onClick="yishi()"><a href="#">医师资格 ▼</a></li>
+        <li style="border-right:1px solid #ccc;" onClick="weisheng()"><a href="#">卫生资格 ▼</a></li>
+        <li><a href="#" onClick="yaoshi()">药师资格 ▼</a></li>
+    </ul>
+</div>
+<div class="clear"></div>
+
+<!--医师资格列表 -->
+<div class="xkzx_list" style="margin-bottom:0rem; position:absolute; display:none; width:100%;" id="xkzx_ys">
+	<ul class="xkzx_list_ul" style="background:#FFF;">
+    	<li><a href="#">临床执业医师</a><span><a href="#">&gt;</a></span></li>
+        <li><a href="#">中医执业医师</a><span><a href="#">&gt;</a></span></li>
+        <li><a href="#">中医助理医师</a><span><a href="#">&gt;</a></span></li>
+        <li><a href="#">中西医执业医师</a><span><a href="#">&gt;</a></span></li>
+        <li><a href="#">口腔执业医师</a><span><a href="#">&gt;</a></span></li>
+        <li><a href="#">执业护士资格</a><span><a href="#">&gt;</a></span></li>
+        <li><a href="#">主管护师资格</a><span><a href="#">&gt;</a></span></li>
+        <li><a href="#">执业中药师</a><span><a href="#">&gt;</a></span></li>
+        <li><a href="#">中西医助理医师</a><span><a href="#">&gt;</a></span></li>
+        <li><a href="#">乡村全科执业助理医师</a><span><a href="#">&gt;</a></span></li>
+        <li><a href="#">初级护师资格</a><span><a href="#">&gt;</a></span></li>
+        <li><a href="#">乡村全科执业助理医师</a><span><a href="#">&gt;</a></span></li>
+        <li><a href="#">初级护师资格</a><span><a href="#">&gt;</a></span></li>
+    </ul>
+</div>
+
+<!--卫生资格列表 -->
+<div class="xkzx_list" style="margin-bottom:0rem; position:absolute; display:none; width:100%;" id="xkzx_ws">
+	<ul class="xkzx_list_ul" style="background:#FFF;">
+    	<li><a href="#">执业护士资格</a><span><a href="#">&gt;</a></span></li>
+        <li><a href="#">初级护师资格</a><span><a href="#">&gt;</a></span></li>
+        <li><a href="#">主管护师资格师</a><span><a href="#">&gt;</a></span></li>
+        <li><a href="#">主管护师资格师</a><span><a href="#">&gt;</a></span></li>
+        <li><a href="#">主管护师资格</a><span><a href="#">&gt;</a></span></li>
+        <li><a href="#">主管护师资格</a><span><a href="#">&gt;</a></span></li>
+        <li><a href="#">主管护师资格</a><span><a href="#">&gt;</a></span></li>
+        <li><a href="#">主管护师资格</a><span><a href="#">&gt;</a></span></li>
+        <li><a href="#">主管护师资格</a><span><a href="#">&gt;</a></span></li>
+        <li><a href="#">主管护师资格</a><span><a href="#">&gt;</a></span></li>
+        <li><a href="#">主管护师资格</a><span><a href="#">&gt;</a></span></li>
+        <li><a href="#">主管护师资格</a><span><a href="#">&gt;</a></span></li>
+        <li><a href="#">主管护师资格</a><span><a href="#">&gt;</a></span></li>
+    </ul>
+</div>
+
+<!--药师资格列表 -->
+<div class="xkzx_list" style="margin-bottom:0rem; position:absolute; display:none; width:100%;" id="xkzx_yaoshi">
+	<ul class="xkzx_list_ul" style="background:#FFF;">
+    	<li><a href="#">执业西药师</a><span><a href="#">&gt;</a></span></li>
+        <li><a href="#">执业中药师</a><span><a href="#">&gt;</a></span></li>
+        <li><a href="#">执业药师资格面授</a><span><a href="#">&gt;</a></span></li>
+        <li><a href="#">执业药师资格面授</a><span><a href="#">&gt;</a></span></li>
+        <li><a href="#">执业药师资格面授</a><span><a href="#">&gt;</a></span></li>
+        <li><a href="#">执业药师资格面授</a><span><a href="#">&gt;</a></span></li>
+        <li><a href="#">执业药师资格面授</a><span><a href="#">&gt;</a></span></li>
+        <li><a href="#">执业药师资格面授</a><span><a href="#">&gt;</a></span></li>
+        <li><a href="#">执业药师资格面授</a><span><a href="#">&gt;</a></span></li>
+        <li><a href="#">执业药师资格面授</a><span><a href="#">&gt;</a></span></li>
+        <li><a href="#">执业药师资格面授</a><span><a href="#">&gt;</a></span></li>
+        <li><a href="#">执业药师资格面授</a><span><a href="#">&gt;</a></span></li>
+        <li><a href="#">执业药师资格面授</a><span><a href="#">&gt;</a></span></li>
+    </ul>
+</div>
+
+<!--选课列表内容 -->
+<div class="xkzx2_main">
+	<div class="xkzx2_main_d">
+    	<div class="xkzx2_main_left"><img src="images/xkzx-img.png" alt="" style="height:0.8rem; vertical-align:middle;"></div>
+        <div class="xkzx2_main_right">
+        	<p class="xkzx2_main_cb">课程特色：<input type="checkbox" /></p>
+            <p style="color:#999;">基础知识牢固仅需要提高实践技能的学员</p>
+            <p class="xkzx2_main_right_p">¥280元<span><a href="#">购买</a></span></p>
+        </div>
+    </div>
+    
+    <div class="xkzx2_main_d">
+    	<div class="xkzx2_main_left"><img src="images/xkzx-img.png" alt="" style="height:0.8rem; vertical-align:middle;"></div>
+        <div class="xkzx2_main_right">
+        	<p class="xkzx2_main_cb">课程特色：<input type="checkbox" /></p>
+            <p style="color:#999;">基础知识牢固仅需要提高实践技能的学员</p>
+            <p class="xkzx2_main_right_p">¥280元<span><a href="#">购买</a></span></p>
+        </div>
+    </div>
+    
+    <div class="xkzx2_main_d">
+    	<div class="xkzx2_main_left"><img src="images/xkzx-img.png" alt="" style="height:0.8rem; vertical-align:middle;"></div>
+        <div class="xkzx2_main_right">
+        	<p class="xkzx2_main_cb">课程特色：<input type="checkbox" /></p>
+            <p style="color:#999;">基础知识牢固仅需要提高实践技能的学员</p>
+            <p class="xkzx2_main_right_p">¥280元<span><a href="#">购买</a></span></p>
+        </div>
+    </div>
+    
+    <div class="xkzx2_main_d">
+    	<div class="xkzx2_main_left"><img src="images/xkzx-img.png" alt="" style="height:0.8rem; vertical-align:middle;"></div>
+        <div class="xkzx2_main_right">
+        	<p class="xkzx2_main_cb">课程特色：<input type="checkbox" /></p>
+            <p style="color:#999;">基础知识牢固仅需要提高实践技能的学员</p>
+            <p class="xkzx2_main_right_p">¥280元<span><a href="#">购买</a></span></p>
+        </div>
+    </div>
+    
+    <p class="xkzx2_main_p"><img src="images/zaijia.png" alt="">加载更多</p>
+</div>
+
+<!--立即购买 -->
+<div class="navbar-fixed-bottom tsxq_footer">
+	<div class="tsxq_gwc"><a href="#">加入购物车</a></div>
+    <div class="tsxq_ljgm"><a href="#">立即购买</a></div>
+</div>
+
+<script src="js/js.js" type="text/javascript"></script>
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
